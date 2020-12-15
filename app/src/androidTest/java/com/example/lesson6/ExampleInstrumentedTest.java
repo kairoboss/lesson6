@@ -44,7 +44,7 @@ public class ExampleInstrumentedTest {
     public void subTest(){
         onView(withId(R.id.et_1st_num)).perform(typeText("8"));
         onView(withId(R.id.et_2nd_num)).perform(typeText("4"));
-        onView(withId(R.id.btn_addition)).perform(click());
+        onView(withId(R.id.btn_subtraction)).perform(click());
         onView(withId(R.id.tv_result)).check(matches(withText("4")));
     }
 
@@ -52,7 +52,7 @@ public class ExampleInstrumentedTest {
     public void multTest(){
         onView(withId(R.id.et_1st_num)).perform(typeText("2"));
         onView(withId(R.id.et_2nd_num)).perform(typeText("2"));
-        onView(withId(R.id.btn_addition)).perform(click());
+        onView(withId(R.id.btn_multiply)).perform(click());
         onView(withId(R.id.tv_result)).check(matches(withText("4")));
     }
 
@@ -60,7 +60,7 @@ public class ExampleInstrumentedTest {
     public void divTest(){
         onView(withId(R.id.et_1st_num)).perform(typeText("16"));
         onView(withId(R.id.et_2nd_num)).perform(typeText("4"));
-        onView(withId(R.id.btn_addition)).perform(click());
+        onView(withId(R.id.btn_division)).perform(click());
         onView(withId(R.id.tv_result)).check(matches(withText("4")));
     }
 }
